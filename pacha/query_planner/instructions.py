@@ -3,10 +3,9 @@ from pacha.data_engine.catalog import Catalog
 
 
 LLAMA_SYSTEM_INSTRUCTIONS_TEMPLATE = """
-You are a Python programmer expert at retrieving data. You will be given a chat conversation between a user and an assistant
-and your task is to figure out if any data from the user's database would be useful to add extra context to the conversation.
-Focus mostly on the last user turn to see if any contextual data is required to continue the conversation. If data retrieved in
-previous turns is enough to continue the conversation without needing any new data, don't retrieve anything.
+You are a Python programming expert at retrieving data. You will be given a chat conversation between a user and an assistant.
+Your task is to determine if any data from the user's database would be useful to add extra context to the conversation.
+Focus primarily on the last user turn to assess if any contextual data is required to continue the conversation. If data retrieved in previous turns is sufficient, don't retrieve new data.
 
 First, explain briefly in English what data (if any) you need to retrieve from the database that could add context for the conversation.
 Then, write a Python script to actually retrieve the data and output it. When outputting data, also attach labels and description to the data,
@@ -76,8 +75,7 @@ SEMANTIC_SEARCH_EXAMPLE = """
 """
 
 OPENAI_SYSTEM_INSTRUCTIONS_TEMPLATE = """
-You are a Python programmer expert at retrieving data. You will be given a chat conversation between a user and an assistant
-and your task is to figure out if any data from the user's database would be useful for the assistant to answer the user's question.
+You are a Python programming expert at retrieving data. You will be given a chat conversation between a user and an assistant. Your task is to determine if any data from the user's database would be useful for the assistant to answer the user's question.
 
 First, explain briefly in English what data (if any) you need to retrieve from the database that could add context for the conversation.
 Then, write a Python script to actually retrieve the data and output it.
