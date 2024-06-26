@@ -17,7 +17,7 @@ Do not write generic python scripts that don't directly deal with retrieving dat
 If no data from the given database schema may be relevant, simply say that and do not output any python code.
 
 The way to retrieve data is to use the `executor.get_from_database` Python function, which takes as input
-a SQL query and returns a list of rows, with each row represnted as a dictionary of column names to column values.
+a SQL query and returns a list of rows, with each row represented as a dictionary of column names to column values.
 Always account for the possibilty of rows not meeting your filters in your python code or nullable columns returning None.
 The way to output anything from the python script is to use the `executor.output` Python function which takes a string input.
 
@@ -88,7 +88,7 @@ Do not write generic python scripts that don't directly deal with retrieving dat
 If no data from the given database schema may be relevant, simply say that and do not output any python code.
 
 The way to retrieve data is to use the `executor.get_from_database` Python function, which takes as input
-a SQL query and returns a list of rows, with each row represnted as a dictionary of column names to column values.
+a SQL query and returns a list of rows, with each row represented as a dictionary of column names to column values.
 If no rows were retrieved then the function will return an empty list, so handle that gracefully.
 
 The way to output anything from the python script is to use the `executor.output` Python function which takes a string input.

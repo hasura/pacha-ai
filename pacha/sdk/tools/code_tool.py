@@ -15,7 +15,7 @@ TOOL_DESCRIPTION = """
 This tool can be used to write Python scripts to retrieve data from the user's database.
 
 The way to retrieve data is to use the `executor.get_from_database` Python function, which takes as input
-a SQL query and returns a list of rows, with each row represnted as a dictionary of column names to column values.
+a SQL query and returns a list of rows, with each row represented as a dictionary of column names to column values.
 Always account for the possibilty of rows not meeting your filters in your python code or nullable columns returning None.
 The way to output anything from the python script is to use the `executor.output` Python function which takes a string input.
 """
